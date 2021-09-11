@@ -20,8 +20,7 @@ encoding sets of key value pairs, some schemes do not specify an ordering.
 RLP operates on byte sequences and lists. Lists can contain byte sequences and
 other lists. The interpretation of all inputs is handled by other protocols. For
 byte sequences, small headers are added which depend on the length. For lists,
-the elements are encoded separately and concatenated. As with byte sequences,
-small headers are added which depend on the length. Lastly, all lengths are
+the elements are encoded separately and concatenated. Lastly, all lengths are
 encoded in big endian format.
 
 Here are Python functions which implement RLP encoding and decoding:
